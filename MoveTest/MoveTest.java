@@ -10,5 +10,4 @@ public class MoveTest {
         cerealBox.translate(15, 25);
         System.out.println(cerealBox);
     }
-    
 }
