@@ -11,6 +11,7 @@ public class PurseTest {
         borsellino.addNickels(Integer.parseInt(inputNickels));
         borsellino.addDimes(Integer.parseInt(inputDimes));
         borsellino.addQuarters(Integer.parseInt(inputQuarters));
+
        
         borsellino.getAmount();
 
