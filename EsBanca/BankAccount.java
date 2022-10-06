@@ -10,11 +10,17 @@ public class BankAccount {
     }
 
     public void deposit(float x){
+        if (x>0)
         amount = amount + x;
+        else
+            System.out.println("Importo invalido");
     }
 
     public void withdraw(float x){
+        if (amount >= x)
         amount = amount - x;
+        else
+            System.out.println("Denaro insufficiente");
     }
 
 

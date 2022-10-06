@@ -1,15 +1,34 @@
+import javax.swing.*;
+
 public class MainBankAccount {
 
     public static void main(String[] args){
         BankAccount conto = new BankAccount();
-        conto.balance();
+        Integer uscita = 0;
+        while (uscita != 1) {
+            String choice = JOptionPane.showInputDialog("Scegli l'operazione da effettuare tra : \n1)Mostra bilancio\n2)Preleva denaro\n3)Deposita denaro\n4)Esci");
 
-        conto.deposit(7000.00f);
+            switch (Integer.parseInt(choice)) {
+                case 1:
+                    conto.balance();
+                    break;
 
-        conto.balance();
+                case 2:
+                    String amount = JOptionPane.showInputDialog("Scegli l'importo da prelevare:");
+                    conto.withdraw(Float.parseFloat(amount));
+                    break;
 
-        conto.withdraw(80.00f);
+                case 3:
+                    String amount2 = JOptionPane.showInputDialog("Scegli l'importo da prelevare:");
+                    conto.deposit(Float.parseFloat(amount2));
+                    break;
 
-        conto.balance();
+                case 4:
+                    uscita = 1;
+                    break;
+
+
+            }
+        }
     }
 }
