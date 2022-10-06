@@ -1,3 +1,5 @@
+package EsBank;
+
 public class BankAccount {
     private float amount;
 
@@ -5,8 +7,8 @@ public class BankAccount {
         amount = 0.0f;
     }
 
-    public void balance(){
-        System.out.println("Your balance is: " + amount);
+    public float balance(){
+        return amount;
     }
 
     public void deposit(float x){
