@@ -15,6 +15,8 @@ public class A {
 
         D d = new D();
 
+
+
         /*TEST ISTANZE
         System.out.println("Test istanza di");
         System.out.println("Oggetto a");
